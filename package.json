@@ -1,0 +1,22 @@
+{
+  "name": "chat_server",
+  "version": "1.0.0",
+  "description": "signaling server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Milton",
+    "Black"
+  ],
+  "author": "Milton Black",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
