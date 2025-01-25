@@ -1,11 +1,11 @@
-import { Server, Socket } from "socket.io";
-import { Server as HTTPServer } from "http";
 import {
   AnswerCallData,
   CallData,
   HandshakeQuery,
   ICECandidateData,
 } from "./interfaces/socket";
+import { Server, Socket } from "socket.io";
+import { Server as HTTPServer } from "http";
 
 let IO: Server;
 

@@ -1,6 +1,6 @@
 import path from "path";
-import { createServer } from "http";
 import express from "express";
+import { createServer } from "http";
 import { getIO, initIO } from "./socket";
 
 const app = express();
@@ -13,6 +13,8 @@ let port = process.env.PORT || 3500;
 
 initIO(httpServer);
 
-httpServer.listen(port);
+httpServer.listen(port, () => {
+  console.log("Server started on", port);
+});
 
 getIO();
