@@ -6,7 +6,9 @@
   "scripts": {
     "start": "yarn build && pm2 start ecosystem.config.js --env production",
     "dev": "pm2 start ecosystem.config.js --env development",
-    "build": "tsc"
+    "build": "tsc",
+    "start:nodemon": "node ./dist/index.js",
+    "run": "npm run build && node ./dist/index.js"
   },
   "keywords": [
     "Milton",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
     "pm2": "^5.4.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
